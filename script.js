@@ -1,39 +1,19 @@
-for (let i = 1; i < 11; i = i + 1) {
-    console.log(i);
-}
+const name1 = "Gerard";
+const name2 = "Barbara";
+const name3 = "Dwayne";
 
-for (let i = 10; i > 0; i = i - 1) {
-    console.log(i);
-}
-
-let i = 1;
-
-while (i < 11) {
-    console.log(i++);
-}
-
-i = 10;
-
-while (i > 0) {
-    console.log(i--);
-}
-
-i = 1;
-
-do {
-    console.log(i++);
-}
-while (i < 11);
-
-i = 10;
-
-do {
-    console.log(i--);
-}
-while (i >0);
-
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-for (let number of numbers) {
-    console.log(number);
+if (name1.length > name2.length && name1.length > name3.length) {
+    console.log(`${name1} has the longest name.`);
+} else if (name2.length > name1.length && name2.length > name3.length) {
+    console.log(`${name2} has the longest name.`);
+} else if (name3.length > name1.length && name3.length > name2.length) {
+    console.log(`${name3} has the longest name.`);
+} else if (name1.length === name2.length) {
+    console.log(`${name1} and ${name2} tie for the longest name.`);
+} else if (name1.length === name3.length) {
+    console.log(`${name1} and ${name3} tie for the longest name.`);
+} else if (name2.length === name3.length) {
+    console.log(`${name2} and ${name3} tie for the longest name.`);
+} else (name1.length === name2.length && name1.length === name3.length) {
+    console.log(`All three names, ${name1} , ${name2} ,and ${name3} , are the same length.`);
 }
